@@ -25,6 +25,18 @@ async function onSubmit() {
     title: "Email Sent",
     text: "Thank you for reaching out!",
   });
+  clearForm();
+}
+
+function clearForm() {
+  const inputs = Array.from(
+    document.querySelectorAll("#email, #name, #message")
+  );
+  inputs.forEach((input) => {
+    input.value = "";
+  });
+
+  console.log(inputs);
 }
 
 document.getElementById("submit").addEventListener("click", onSubmit);
