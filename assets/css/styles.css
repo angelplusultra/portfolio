@@ -1,11 +1,15 @@
 a {
-    text-decoration:none;
-    color: aquamarine;
+  text-decoration: none;
+  color: aquamarine;
 }
 .links {
-    font-size: large;
+  font-size: large;
 }
 
 .gh {
-    color: black;
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
 }
