@@ -13,3 +13,13 @@ a {
 html {
   scroll-behavior: smooth;
 }
+
+#templix {
+  height: 168.95px;
+}
+
+.tech-section {
+  padding-top: 1em;
+}
+.tech-list {
+}
