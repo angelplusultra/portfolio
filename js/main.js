@@ -35,8 +35,6 @@ function clearForm() {
   inputs.forEach((input) => {
     input.value = "";
   });
-
-  console.log(inputs);
 }
 
 document.getElementById("submit").addEventListener("click", onSubmit);
