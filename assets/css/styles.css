@@ -4,10 +4,14 @@ a {
 }
 .links {
   font-size: large;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 .gh {
   color: black;
+  font-size: x-large;
 }
 
 html {
@@ -21,5 +25,42 @@ html {
 .tech-section {
   padding-top: 1em;
 }
+.tech-section > h3 {
+  font-size: medium;
+}
 .tech-list {
+  font-size: 15px;
+}
+
+.visit-button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
+  background-color: transparent;
+  border-radius: 0.35em;
+  font-size: medium;
+  border: solid 3px #efefef;
+  color: #787878 !important;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 2.75em;
+  padding: 0 1.5em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.visit-button:hover {
+  border-color: #49bf9d;
+  color: #49bf9d !important;
 }
