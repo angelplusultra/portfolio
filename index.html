@@ -28,7 +28,7 @@
         /></a>
         <h1>
           <strong>I am Mac</strong>, a self-taught fullstack<br />
-          web developer based in Southern California<br />
+          developer based in Southern California<br />
         </h1>
       </div>
     </header>
@@ -38,7 +38,24 @@
       <!-- One -->
       <section id="one">
         <header class="major">
-          <h2>Mac Fitton</h2>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 20px;
+            "
+          >
+            <h2 style="margin: 0">Mac Fitton</h2>
+            <a
+              class="visit-button"
+              target="_blank
+              "
+              style="font-size: small"
+              href="./assets/my_resume.pdf"
+              >View Resume</a
+            >
+          </div>
         </header>
         <h4>About Me</h4>
         <p>
@@ -57,9 +74,30 @@
         <h2>Recent Work</h2>
         <div class="row">
           <article class="col-6 col-12-xsmall work-item">
-            <a href="images/templix_demo_02.gif" class="image fit thumb"
-              ><img src="images/resized_templix.gif" alt=""
-            /></a>
+              <img class="image fit thumb" src="images/Beyond Reproach_logo.jpg" alt=""
+            <h3>Beyond Reproach</h3>
+            <p>
+              Custom web server for Miami based premium meal-prep company,
+              Beyond Reproach
+            </p>
+            <div class="tech-section">
+              <h3>Tech</h3>
+              <ul class="tech-list">
+                <li>TypeScript</li>
+                <li>NodeJS</li>
+                <li>KoaJS</li>
+                <li>Strapi CMS</li>
+                <li>Stripe</li>
+                <li>Twilio</li>
+                <li>ShipDay</li>
+                <li>Yup</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </div>
+            <div class="links"></div>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+              <img class="image fit thumb" src="images/resized_templix.gif" alt=""
             <h3>Templix</h3>
             <p>
               a project template management GUI tool for developers, made with
@@ -96,9 +134,7 @@
             </div>
           </article>
           <article class="col-6 col-12-xsmall work-item">
-            <a href="images/CalmShrub_thumbnail.gif" class="image fit thumb"
-              ><img src="images/CalmShrub_thumbnail.gif" alt=""
-            /></a>
+              <img class="image fit thumb" src="images/CalmShrub_thumbnail.gif" alt=""
             <h3>Calm Shrub Art</h3>
             <p>eCommerce store for the Michigan based artist, Calm Shrub.</p>
             <div class="tech-section">
@@ -132,9 +168,7 @@
             </div>
           </article>
           <article class="col-6 col-12-xsmall work-item">
-            <a class="image fit thumb" href="images/Gigawatch_thumbnail.gif"
-              ><img src="images/Gigawatch_thumbnail.gif" alt=""
-            /></a>
+              <img class="image fit thumb" src="images/Gigawatch_thumbnail.gif" alt=""
             <h3>Gigawatch</h3>
             <p>Watch mode devtools for JS, TS, Python and Lua developers</p>
             <div class="tech-section">
@@ -246,7 +280,6 @@
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.poptrox.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
@@ -259,5 +292,8 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <script type="module" src="./js/main.js"></script>
+    <script>
+      document.querySelector(".image").removeEventListener("click");
+    </script>
   </body>
 </html>
